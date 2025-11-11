@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homenagem ao Amigo TikTok 🎥</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: radial-gradient(circle at center, #000 40%, #0a0a0a 100%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+    animation: pulse 6s infinite alternate;
+    z-index: 0;
+  }
+
+  @keyframes pulse {
+    from { opacity: 0.3; }
+    to { opacity: 0.8; }
+  }
+
+  header {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    z-index: 10;
+  }
+
+  header a {
+    color: #ff4f8b;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;
+    animation: glowText 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowText {
+    from { text-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099; }
+    to { text-shadow: 0 0 25px #00f2ea, 0 0 40px #00f2ea; }
+  }
+
+  header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+
+  h1 {
+    font-size: 2em;
+    max-width: 800px;
+    line-height: 1.5em;
+    animation: fadeIn 3s ease forwards;
+    z-index: 1;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+
+  .tiktok {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #ff4f8b;
+    animation: fadeIn 4s ease forwards;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .icon-box img {
+    width: 60px;
+    filter: drop-shadow(0 0 10px #ff0099);
+    transition: transform 0.3s;
+  }
+
+  .icon-box img:hover {
+    transform: scale(1.1);
+  }
+
+  .icon-box a {
+    color: #ff4f8b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .credit {
+    font-size: 0.9em;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="glow"></div>
+
+<header>
+  <a href="https://www.tiktok.com/@geralgamer" target="_blank">
+    Siga meu amigo aqui
+  </a>
+</header>
+
+<h1>
+  Mesmo sem <span class="highlight">tempo</span> pra postar,<br>
+  sua <span class="highlight">presença</span> continua inspirando muita gente.<br>
+  Continue firme, irmão — o <span class="highlight">talento</span> nunca para! 💪🔥
+</h1>
+
+<div class="tiktok">
+  Siga meu grande amigo no TikTok<br>
+  <span class="highlight"></span>
+</div>
+
+<footer>
+  <div class="socials">
+    <div class="icon-box">
+      <a href="https://www.instagram.com/noxkkkjjjkk" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.instagram.com/noxkkkjjjkk" target="_blank">Clica aqui</a>
+    </div>
+  </div>
+
+  <div class="credit">Siga meu criador</div>
+</footer>
+
+</body>
+</html>
